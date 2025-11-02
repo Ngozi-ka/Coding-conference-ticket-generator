@@ -25,7 +25,7 @@
           <p>Secure your spot at next year's biggest coding conference.</p>
         </section>
         <section class="form-section">
-          <form action="submit" class="form">
+          <form class="form">
             <div class="for-image">
               <p class="first-p">Upload Avater</p>
               <div class="image-file">
@@ -34,8 +34,8 @@
                   alt="icon upload"
                   class="icon-upload"
                 />
-                <input type="file" name="files" enctype="multipart/form-data" />
-                <label for="">Drag and drop or click to upload</label>
+                <input type="file" name="files" accept="image/*" id="image-file" required/>
+                <label for="" id="image-label">Drag and drop or click to upload</label>
               </div>
               <p class="second-p">
                 Upload your photo (JPG or PNG, max size: 500KB).
@@ -43,15 +43,15 @@
             </div>
             <div class="in-put">
               <label for="username">Full Name</label>
-              <input type="text" />
+              <input type="text" id="username" required/>
             </div>
             <div class="in-put">
               <label for="Email Address"> Email Address</label>
-              <input type="email" placeholder="example@email.com" />
+              <input type="email" placeholder="example@email.com" id="useremail" required/>
             </div>
             <div class="in-put">
               <label for="github">GitHub Username</label>
-              <input type="text" placeholder="  @yourusername" />
+              <input type="text" placeholder="  @yourusername" id="usergit" required/>
             </div>
             <button type="submit">Generate My Ticket</button>
           </form>
@@ -78,9 +78,10 @@
             </div>
             <p class="date">today</p>
             <div class="avatar-github">
-              <img class="received-image" src="/image-avatar.jpg">
+              <img class="received-image" src="">
               <div class="name-git">
-                <p class="yourr-name">name</p>
+                <p class="special-id">id</p>
+                <p class="your-name">name</p>
                 <p class="your-git">Git</p>
               </div>
             </div>

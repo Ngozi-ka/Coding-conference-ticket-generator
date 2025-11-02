@@ -38,7 +38,7 @@ header span, .conf-logo {
 }
 
 .first-container{
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
@@ -116,7 +116,7 @@ font-size: 11px;
 }
 
 .image-file > input{
-    opacity: 0;
+    opacity: 100;
 }
 
 .in-put{
@@ -147,7 +147,7 @@ button{
 .ticket-container{
     margin-top: 2rem;
     width: 45rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
@@ -214,6 +214,11 @@ button{
     padding: 1rem 0;
 }
 
+.first-container > .invite-section > p{
+    width: 70%;
+}
+
+
 .ticket-container{
     max-width: 40rem;
 }
@@ -240,7 +245,5 @@ button{
     display: flex;
     gap: 1rem;
 }
-
-
 
 }
