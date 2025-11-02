@@ -22,11 +22,11 @@ header{
     gap: 1rem;
 }
 
-header .logo{
+header .logo, .conf-logo .logo{
     width: 1.5rem;
 }
 
-header span{
+header span, .conf-logo {
     font-weight: 800;
 }
 
@@ -146,11 +146,12 @@ button{
 
 .ticket-container{
     margin-top: 2rem;
-    width: 30rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    align-items: center;
 }
 
 .ticket-section{
@@ -174,6 +175,72 @@ button{
 .ticket-info{
     width: 50%;
     text-align: center;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.ticket > .each{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+    width: 22rem;
+    padding: 2rem;
+    background: rgba(128, 128, 128, 0.185);
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 1rem;
+}
+
+.conf-logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.avatar-github{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.received-image{
+    height: 4rem;
+    border-radius: 6px;
+}
+
+@media(max-width: 45rem){
+    body{
+    background-size: cover, 10rem 10rem,15rem;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+}
+
+.ticket-container{
+    max-width: 40rem;
+}
+
+.ticket-section > h1{
+    font-size: 2.5rem;
+}
+
+.ticket-info{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    width: 70%;
+    
+}
+
+.ticket > .each{
+    gap: 1.5rem;
+    width: 18rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.conf-logo{
+    display: flex;
+    gap: 1rem;
 }
 
 
+
+}
