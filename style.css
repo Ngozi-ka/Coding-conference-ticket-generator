@@ -30,6 +30,13 @@ header span{
     font-weight: 800;
 }
 
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .first-container{
     display: none;
     flex-direction: column;
@@ -136,3 +143,37 @@ button{
     width: 100%;
     background:hsl(7, 71%, 60%);
 }
+
+.ticket-container{
+    margin-top: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.ticket-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ticket-section > h1{
+    text-align: center;
+}
+
+
+.ticket-section > h1 > span, .ticket-info > span{
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    color: transparent;
+}
+
+.ticket-info{
+    width: 50%;
+    text-align: center;
+}
+
+
