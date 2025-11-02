@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/background-desktop.png), url(/pattern-squiggly-line-bottom-desktop.svg), url(/pattern-squiggly-line-top.svg), url(/pattern-lines.svg);
+    background-blend-mode: overlay;
+    background-position: center, bottom left, top right;
+    background-size: cover, 30rem 15rem, 30rem;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .logo{
+    width: 1.5rem;
+}
+
+header span{
+    font-weight: 800;
+}
+
+.first-container{
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2.5rem;
+    max-width: 40rem;
+}
+
+.first-container > .invite-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.first-container > .invite-section > h2{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.first-container > .invite-section > p{
+    color: hsl(252, 6%, 83%);
+    font-weight: 550;
+     font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form > .for-image{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.form > .for-image > .first-p{
+    font-size: 13px;
+    color: hsl(245, 15%, 58%);
+}
+
+.form > .for-image > .second-p{
+    font-size: 9px;
+   color: hsl(245, 15%, 58%);
+   font-weight: 600;
+
+}
+
+.form > .for-image > .image-file{
+    display: flex;
+    flex-direction: column;
+    border: 3px dashed hsl(245, 15%, 58%);
+    gap: 0.7rem;
+    padding: 0.5rem;
+    align-items: center;
+    background: hsla(246, 15%, 58%, 0.075);
+}
+
+.image-file > img{
+    width: 2rem;
+    border: none;
+    background: hsla(246, 15%, 58%, 0.336);
+    border-radius: 5px;
+}
+
+.image-file > label{
+font-size: 11px;
+   color: hsl(245, 15%, 58%);
+   font-weight: 700;
+}
+
+.image-file > input{
+    opacity: 0;
+}
+
+.in-put{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.in-put > label {
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+    color: hsl(245, 15%, 58%);
+    letter-spacing: 1px;
+}
+
+.in-put > input, button{
+    height: 2rem;
+    border-radius: 8px;
+    padding: 0 1rem;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    background:hsl(7, 71%, 60%);
+}
