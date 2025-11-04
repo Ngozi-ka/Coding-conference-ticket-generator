@@ -117,10 +117,6 @@ header span,
   font-weight: 700;
 }
 
-.image-file > input {
-  opacity: 100;
-}
-
 .in-put {
   display: flex;
   flex-direction: column;
@@ -140,11 +136,16 @@ button {
   border-radius: 8px;
   padding: 0 1rem;
   outline: none;
+  background: rgba(128, 128, 128, 0.226);
 }
 
 button {
   width: 100%;
   background: hsl(7, 71%, 60%);
+  height: 2rem;
+  border-radius: 8px;
+  padding: 0 1rem;
+  outline: none;
 }
 
 .ticket-container {
