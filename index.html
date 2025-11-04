@@ -3,19 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Conference ticket generator</title>
   </head>
 
   <body>
     <header>
-      <img src="/images/logo-mark.svg" alt="logo" class="logo" />
+      <img src="logo-mark.svg" alt="logo" class="logo" />
       <span>Coding Conf</span>
     </header>
     <div class="main-container">
@@ -29,11 +24,7 @@
             <div class="for-image">
               <p class="first-p">Upload Avater</p>
               <div class="image-file">
-                <img
-                  src="/images/icon-upload.svg"
-                  alt="icon upload"
-                  class="icon-upload"
-                />
+                
                 <input
                   type="file"
                   name="files"
@@ -41,8 +32,12 @@
                   id="image-file"
                   required
                 />
-                <label for="" id="image-label"
-                  >Drag and drop or click to upload</label
+                <label for="image-file" id="image-label"
+                  > <img
+                  src="icon-upload.svg"
+                  alt="icon upload"
+                  class="icon-upload"
+                />Drag and drop or click to upload</label
                 >
               </div>
               <p class="second-p">

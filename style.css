@@ -5,9 +5,9 @@
 }
 
 body {
-  background: url(/images/background-desktop.png),
-    url(/images/pattern-squiggly-line-bottom-desktop.svg),
-    url(/images/pattern-squiggly-line-top.svg), url(/images/pattern-lines.svg);
+  background: url(/background-desktop.png),
+    url(/pattern-squiggly-line-bottom-desktop.svg),
+    url(/pattern-squiggly-line-top.svg), url(/pattern-lines.svg);
   background-blend-mode: overlay;
   background-position: center, bottom left, top right;
   background-size: cover, 30rem 15rem, 30rem;
@@ -94,7 +94,7 @@ header span,
   font-weight: 600;
 }
 
-.form > .for-image > .image-file {
+ .for-image > .image-file {
   display: flex;
   flex-direction: column;
   border: 3px dashed hsl(245, 15%, 58%);
@@ -104,7 +104,11 @@ header span,
   background: hsla(246, 15%, 58%, 0.075);
 }
 
-.image-file > img {
+.image-file > input{
+  display: none;
+}
+
+.image-file > label > img {
   width: 2rem;
   border: none;
   background: hsla(246, 15%, 58%, 0.336);
@@ -112,6 +116,10 @@ header span,
 }
 
 .image-file > label {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
   font-size: 11px;
   color: hsl(245, 15%, 58%);
   font-weight: 700;
