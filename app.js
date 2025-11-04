@@ -14,6 +14,7 @@ const userEmail = document.getElementById("useremail");
 const userGit = document.getElementById("usergit");
 const todaysDate = document.querySelector(".date");
 const specialId = document.querySelector(".special-id");
+const imagePreview = document.querySelector("#image-preview");
 
 image.addEventListener("change", function () {
   const file = this.files[0];
@@ -31,6 +32,7 @@ image.addEventListener("change", function () {
     imageLabel.textContent = "No image selected";
   }
 });
+
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();

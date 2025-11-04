@@ -5,9 +5,7 @@
 }
 
 body {
-  background: url(/background-desktop.png)
-      url(pattern-squiggly-line-bottom-desktop.svg),
-    url(pattern-squiggly-line-top.svg), url(/pattern-lines.svg);
+  background: rgb(3, 3, 66);
   background-blend-mode: overlay;
   background-position: center, bottom left, top right;
   background-size: cover, 30rem 15rem, 30rem;
